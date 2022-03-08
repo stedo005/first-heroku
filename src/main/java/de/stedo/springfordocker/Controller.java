@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/hello")
 public class Controller {
 
-    @GetMapping("{path}")
+    @GetMapping("/{name}")
     public String sayHello(@PathVariable String name) {
         return "Hallo " + name + " ,wie geht es dir?";
     }
