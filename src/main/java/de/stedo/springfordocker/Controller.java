@@ -8,7 +8,7 @@ public class Controller {
 
     @GetMapping("/{name}")
     public String sayHello(@PathVariable String name) {
-        return "Hallo " + name + " ,wie geht es dir?";
+        return "Hallo " + name + ", wie geht es dir?";
     }
 
 }
